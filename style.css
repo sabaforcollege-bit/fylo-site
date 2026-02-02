@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1d212f;
+    background-image: url(./fylo-dark-theme-landing-page-master/images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 30px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    gap: 20px;
+    padding: 0 30vw;
+}
+
+main h1 {
+    font-size: 40px;
+}
+
+main p {
+    font-size: 20px;
+    width: 70%;
+}
+
+.intro-img {
+    height: 20vw;
+}
+
+button {
+    width: 40%;
+    height: 50px;
+    background-color: #48b2cf;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+section {
+    padding: 4vw 28vw;
+}
+
+.section-first {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+}
+
+.info-cards {
+    display: flex;
+    color: white;
+    font-size: 18px;
+    gap: 4vw;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    gap: 1vw;
+    font-size: 16px;
+}
+
+.info-card p {
+    font-size: 16px;
+}
+
+.section-second {
+    display: flex;
+    padding: 0vw 20vw;
+    gap: 5vw;
+}
+
+.image-chat {
+    width: 50%;
+}
+
+.image-chat img {
+    width: 100%;
+    height: 100%;
+}
+
+.fylo-works {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: white;
+    gap: 1vw;
+    padding-top: 4vw;
+    font-size: 25px;
+}
+
+.fylo-works p {
+    color: darkgray;
+    font-size: 18px;
+}
+
+.how-works {
+    background-color: transparent;
+    color: #5de1d9;
+    font-size: 18px;
+    border: none;
+    width: 60%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1vw;
+}
+
+.how-works img {
+    height: 1vw;
+}
+
+.section-third {
+    border: 2px solid red;
+    display: flex;
+    background-repeat: no-repeat;
+    padding: 3vw 20vw;
+    color: white;
+    gap: 2vw;
+    position: relative;
+}
+
+.background-quotes {
+    position: absolute;
+    background-image: url(./fylo-dark-theme-landing-page-master/images/bg-quotes.png);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50%;
+    z-index: -1;
+    right: 0;
+    top: 0;
+}
+
+.comment-card {
+    background-color: #23283b;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+.users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5vw;
+}
+
+.users-img {
+    width: 18%;
+}
+
+.users-img img {
+    width: 65%;
+    border-radius: 100%;
+}
+
+.users-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 82%;
+    font-size: 11px;
+    gap: 5px;
+}
+
+.users-info p {
+    color: darkgray;
+}
+
+/* .section-fourth{} */
+
+@media (max-width:1200px) {
+    header {
+        padding: 35px 55px;
+    }
+
+    header nav {
+        width: 30%;
+    }
+
+    main,
+    section {
+        padding: 0 20%;
+    }
+
+    .intro-img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width:900px) {
+    header {
+        padding: 5% 8%;
+    }
+
+    header nav {
+        width: 50%;
+        gap: 10px;
+    }
+
+    main,
+    section {
+        padding: 0 10%;
+    }
+
+    .intro-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    main h1 {
+        width: 100%;
+    }
+
+    main p {
+        width: 100%;
+    }
+
+    .info-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .info-card {
+        width: 100%;
+    }
+
+    .section-second {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .image-chat {
+        width: 100%;
+    }
+
+    .image-chat img {
+        width: 100%;
+    }
+
+    .fylo-works {
+        width: 100%;
+    }
+}
